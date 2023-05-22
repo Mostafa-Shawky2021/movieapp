@@ -1,0 +1,19 @@
+@use "./variable" as var;
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: var.$body-bg !important;
+	color: var.$text-color !important;
+}
+a {
+	text-decoration: none !important;
+	color: inherit !important;
+	display: inline-block;
+}
+ul,
+ol {
+	margin: 0px !important;
+}

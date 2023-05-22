@@ -1,0 +1,33 @@
+@use "../../sass/variable" as var;
+@use "../../sass/mediaquery" as *;
+.tv-list {
+	.list-header {
+		margin-top: 5rem;
+		.title {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		.view-more {
+			border: 1px solid #fff;
+			padding: 0.2rem 1.8rem;
+			border-radius: 1.1rem;
+			transition: all 0.3s;
+			font-weight: 500;
+			font-size: 0.99rem;
+			&:hover {
+				color: var.$main-color !important;
+				background-color: #fff;
+			}
+		}
+	}
+	.swiper-slide {
+		width: 15%;
+		@include maxmediaquery("md") {
+			width: 30%;
+		}
+
+		@include maxmediaquery("sm") {
+			width: 40%;
+		}
+	}
+}

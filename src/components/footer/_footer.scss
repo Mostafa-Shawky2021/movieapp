@@ -1,0 +1,25 @@
+@use "../../sass/variable" as var;
+.footer {
+	position: relative;
+	padding: 6rem 2rem;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 3rem;
+	.logo {
+		margin-bottom: 3rem;
+		font-size: 2.5rem;
+		transition: all 0.2s;
+		&:hover {
+			color: var.$main-color;
+		}
+	}
+	.logo img {
+		width: 50px;
+	}
+	ul li {
+		font-size: 1.3rem;
+		font-weight: bold;
+		line-height: 1.9;
+	}
+}

@@ -1,0 +1,56 @@
+@use "../../sass/variable" as var;
+.card-wrapper {
+	width: 100%;
+	.movie-card {
+		position: relative;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 308px;
+		border-radius: 2rem;
+		margin-bottom: 1rem;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background-color: #000;
+			opacity: 0;
+			transition: all 0.3s ease;
+			border-radius: 5px;
+		}
+	}
+
+	.movie-card .btn-play {
+		background-color: red;
+		border: 4px solid transparent;
+		border-radius: 30px;
+		box-shadow: 0 0 7px 8px rgba(255, 0, 0, 0.302);
+		color: #fff;
+		font-size: 1.5rem;
+		font-weight: 600;
+		padding: 0.5rem 1.8rem;
+		position: relative;
+		transition: all 0.3s ease;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%) scale(0);
+	}
+
+	.movie-card:hover .btn-play {
+		transform: translate(-50%, -50%) scale(1);
+	}
+	.movie-card:hover::before {
+		opacity: 0.8;
+	}
+	.name {
+		font-size: 1.2rem;
+		transition: all 0.2s;
+		&:hover {
+			color: var.$main-color;
+		}
+	}
+}
