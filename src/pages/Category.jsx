@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 
 import PageHeader from "../components/page-header/PageHeader";
 import * as tmdbApi from "../api/tmdbApi";
-
 import MovieGrid from "../components/movie-grid/MovieGrid";
 
 const Category = () => {
